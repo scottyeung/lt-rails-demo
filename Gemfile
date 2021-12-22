@@ -24,6 +24,15 @@ gem 'grape_on_rails_routes'
 
 gem 'devise'
 
+# RSwag
+gem 'rswag-api'
+gem 'rswag-ui'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'rswag-specs'
+end
+
 gem 'rack-cors', :require => 'rack/cors'
 
 # Use Redis adapter to run Action Cable in production
