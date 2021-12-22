@@ -1,0 +1,13 @@
+<h1>Hello, Rails!</h1>
+
+<ul>
+<% if user_signed_in? %>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="/articles/<%= article.id %>">
+        <%= article.title %>
+      </a>
+    </li>
+  <% end %>
+<% end %>
+</ul>
